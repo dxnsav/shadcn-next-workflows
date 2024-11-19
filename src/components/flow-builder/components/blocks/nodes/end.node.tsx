@@ -45,6 +45,7 @@ export const metadata: RegisterNodeMetadata<EndNodeData> = {
     icon: "solar:stop-bold",
     title: "End",
     description: "End the chatbot flow",
+    gradientColor: 'sky',
   },
   connection: {
     inputs: 1,

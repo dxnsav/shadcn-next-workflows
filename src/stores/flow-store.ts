@@ -123,6 +123,7 @@ export const useFlowStore = create<IFlowState>()((set, get) => ({
   actions: {
     saveWorkflow: () => {
       const { workflow } = get();
+      console.log("JJJ", JSON.stringify(workflow));
       set({ workflow });
       return workflow;
     },

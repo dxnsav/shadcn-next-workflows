@@ -13,7 +13,7 @@ export const SaveFlowButton = () => {
   const [isValidating, validateFlow] = useFlowValidator((isValid) => {
     if (isValid) {
       const workflow = saveWorkflow();
-      console.log(workflow);
+      console.log("JJ", JSON.stringify(workflow));
       toast.success("Flow is valid", {
         description: "You can now proceed to the next step",
         dismissible: true,
